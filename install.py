@@ -58,6 +58,8 @@ def indexing_methods() -> List[Tuple[str, int, np.ndarray],]:
 visual_features_db = indexing_methods()
 print()
 print(visual_features_db[0][:2], visual_features_db[0][-1].shape)
+print(visual_features_db[1][:2], visual_features_db[0][-1].shape)
+
 def search_engine(query_arr: np.array,
                   db: list,
                   topk:int=10,
